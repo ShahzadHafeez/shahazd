@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<link rel="stylesheet" href="mycss.css">
+<link rel="stylesheet" href="book.css">
+</head>
+
+<body>
+
+<header>
+
+<p> 
+<img src="img/icon2.png" style="float:left; width:60px; height:60px;">
+<br>
+ &emsp;
+<strong>Tiger Airline</strong>
+<br>
+
+connecting world
+
+</p>
+<div class="btn-group" >
+ <button class="space"></button>
+ <button class="space"></button>
+ <a href="index.html" target="_self">
+ <button class="button"> HOME </button>
+  </a>
+
+   
+   <a href="Book.html" target="_self">
+  <button class="button">BOOK</button>
+  </a>
+  
+  <a href="status.html" target="_self">
+  <button class="button">STATUS</button>
+  </a>
+  
+  <a href="Experience.html" target="_self">
+  <button class="button">EXPERIENCE</button>
+  </a>
+  
+  <a href="Fly%20To.html" target="_self">
+  <button class="button">FLY TO</button>
+  </a>
+  
+  <a href="Manage.html" target="_self">
+  <button class="button">MANAGE</button>
+  </a>
+  
+  <a href="help.html" target="_self">
+  <button class="button">HELP</button>
+  </a>
+  <button class="space"></button>
+  <a href="login.html">
+  <button class="button">LOGIN</button>
+  </a>
+  
+   <button class="space"></button>
+  
+</div>  
+  
+</header>
+
+
+
+
+<br><br><br>
+<h1 style="color:green;">Search Your Flight:</h1>
+
+<p style="text-align:center; color:red; font:canvas;">* Sorry your desired flight is not Available</p>
+<br>
+<div class = "forum">
+  <form action="Servlet_Search" method="post" >
+	From:
+	<br>
+    <input type="text" name="from" placeholder="airport or city" required>
+	<br>
+	To:
+	<br>
+        <input type="text" name="to" placeholder="airport or city" required>
+	<br>
+	Passenger:
+	<br>
+        <input type="number" name="number" placeholder="no of seats" required>	 
+  	<br><br>
+        Type:
+        <br>
+        <br>
+        <input type="radio" name="class" value="first" checked>first class
+        <input type="radio" name="class" value="business">business class
+        <input type="radio" name="class" value="economy">economy
+        <br>
+        <br><br>   	
+  	Depart:
+        <input type="date"  name="date_depart" placeholder="mm/dd/yyyy" required>
+        Return:
+        <input type="date"  name="date_return" placeholder="mm/dd/yyyy" required>
+  
+
+     
+  
+
+   <br><br>
+    <br>
+
+ 
+    <input type="Submit" value="See Result">
+   
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+<br><br><br>  
+  
+<footer>
+
+<div class="footer">
+
+
+
+<p style ="color:white;">
+&emsp; 
+<img src="img/icon2.png" style="float:left; width:60px; height:60px;">
+<br>
+ &emsp;
+<strong>Tiger Airline</strong>
+<br>
+
+connecting world
+
+</p>
+
+
+
+
+<p style ="color:white;text-align:center;"> all rights reserved.</p>
+
+</div>
+</footer>
+
+  
+  
+  
+
+</body>
+</html>

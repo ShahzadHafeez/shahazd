@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	
+	
+</head>
+
+<style>
+input[type=text], input[type=tel],input[type=number],input[type=email],#trvloct,#rchloct, list {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+#adlt,#child{
+	width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div.forum
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: left;
+}
+
+body{ 
+
+ background-image:url("lll.jpg");
+  
+ }  
+
+
+
+
+.footer{
+	
+	width: 100%;
+    background-color: #404040;
+}
+
+
+
+
+</style>
+<body>
+
+
+<header>
+
+<p> 
+<img src="img/icon2.png" style="float:left; width:60px; height:60px;">
+<br>
+ &emsp;
+<strong>Tiger Airline</strong>
+<br>
+
+connecting world
+
+</p>
+
+
+
+<div class="footer">
+
+
+<h1 style ="color:white;text-align:center; padding:10px;"> Admin</h1>
+
+</div>
+
+
+
+  
+  
+</header>
+
+
+
+
+
+
+
+
+	
+<br/><br/><br/>
+
+<div class = "forum">
+  <form action="Servlet_New_flight" method="post" >
+  
+  <label for="fname"><h4>Flight ID:</h4></label>
+    <input type="text" id="cntry" name="flightid" placeholder="TA-1234" required>
+       <br/><br/>
+  
+	
+      <label for="fname"><h4>Country From:</h4></label>
+    <input type="text" id="cntry" name="countryfrom" placeholder="Pakistan" required>
+       <br/><br/> 
+    <label for="country"><h4>City From:</h4></label>
+	 <input type="text" id="cntry" name="cityfrom" placeholder="Lahore" required>
+		
+    <br/><br/>
+	
+	<label for="fname"><h4>Country To:</h4></label>
+    <input type="text" id="cntry" name="countryto" placeholder="Saudi Arabia" required>
+       <br/><br/>
+	   
+    <label for="country"><h4>City To:</h4></label>
+    <input type="text" id="cntry" name="cityto" placeholder="Riyyad" required>
+	  
+	  <br/><br/>
+	  <label for="fname"><h4>Business Class:</h4></label>
+	  <p style="color:red;">seats:</p>
+    <input type="number"  name="seat_business" placeholder="50" required>
+       <br/><br/>
+	   <p style="color:red;">price:</p>
+	  <input type="number"  name="price_business" placeholder="123 $" required>
+       <br/><br/>
+	  
+	  <label for="fname"><h4>First Class:</h4></label>
+	  <p style="color:red;">seats:</p>
+    <input type="number"  name="seat_first" placeholder="50 " required>
+       <br/><br/>
+	   <p style="color:red;">price:</p>
+	  <input type="number"  name="price_first" placeholder="100 $" required>
+       <br/><br/>
+	  
+	  <label for="fname"><h4>Economy Class:</h4></label>
+	  <p style="color:red;">seats:</p>
+    <input type="number"  name="seat_economy" placeholder="50 " required>
+       <br/><br/>
+	   <p style="color:red;">price:</p>
+	  <input type="number"  name="price_economy" placeholder="80 $" required>
+       <br/><br/>
+	    <label for="fname"><h4>Total Seats:</h4></label>
+	  <input type="number"  name="seat_total" placeholder="155" required>
+	  <br/><br/>
+  	<br/><br/><br/><br/>
+  	<h4>
+  	<label for="Ddate">Date:</label>
+    <input type="date" id="Ddate" name="depart_date" placeholder="yyyy/mm/dd">
+    <label for="Rdate">Time:</label>
+    <input type="time" id="Rdate" name="depart_time" placeholder="12:30 AM">
+    </h4>
+	<br/><br/>
+	
+	<br/><br/>
+	<br/>
+	
+   
+    
+
+   
+ 
+
+ 
+    <input type="submit" value="Submit">
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+  </form>
+</div>
+
+<footer>
+
+<div class="footer">
+
+
+
+<p style ="color:white;">
+&emsp; 
+<img src="img/icon2.png" style="float:left; width:60px; height:60px;">
+<br>
+ &emsp;
+<strong>Tiger Airline</strong>
+<br>
+
+connecting world
+
+</p>
+
+
+
+
+<p style ="color:white;text-align:center;"> all rights reserved.</p>
+
+</div>
+</footer>
+
+</body>
+</html>
+

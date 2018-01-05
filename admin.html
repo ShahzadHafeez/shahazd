@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	
+	
+</head>
+
+<style>
+input[type=text],input[type=email],#trvloct,#rchloct, list {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+input[type=submit] {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div.forum
+{
+    display: block;
+    text-align: center;
+}
+
+
+body{ 
+
+ background-image:url("lll.jpg");
+  
+ }  
+
+
+
+
+.footer{
+	
+	width: 100%;
+    background-color: #404040;
+}
+
+
+
+
+</style>
+<body>
+
+
+<header>
+
+<p> 
+<img src="img/icon2.png" style="float:left; width:60px; height:60px;">
+<br>
+ &emsp;
+<strong>Tiger Airline</strong>
+<br>
+
+connecting world
+
+</p>
+
+
+
+<div class="footer">
+
+
+<h1 style ="color:white;text-align:center; padding:10px;"> Admin</h1>
+
+</div>
+
+
+
+  
+  
+</header>
+	
+<br/><br/><br/>
+
+<div class = "forum" id="demo">
+  
+    <form action="Servlet_New_Flight" method="post">
+    <p><b>Flight ID:</b></p>
+    <input type="text" id="cntry" name="flightid" value="TA-1234" placeholder="TA-1234" required>
+	
+       <br/><br/>
+            
+	
+      <p><b>Country From:</b></p>
+      <input type="text" id="cntry" name="countryfrom" value="pakistan" placeholder="Pakistan" required>
+       <br/><br/> 
+    <p><b>City From:</b></p>
+    <input type="text" id="cntry" name="cityfrom" value="lahore" placeholder="Lahore" required>
+		
+    <br/><br/>
+	
+	<p><b>Country To:</b></p>
+        <input type="text" id="cntry" name="countryto" value="saudi arabia" placeholder="Saudi Arabia" required>
+       <br/><br/>
+	   
+    <p><b>City To:</b></p>
+    <input type="text" id="cntry" name="cityto" value="riyyad" placeholder="Riyyad" required>
+	  
+	  <br/><br/>
+	  <br/><br/>
+	  <br/><br/>
+	  <br/>
+  	<p><b>Date:
+        <input type="date" id="Ddate" name="depart_date" placeholder="yyyy/mm/dd" required>
+    Time:
+    <input type="time" id="Rdate" name="depart_time" placeholder="12:30 AM" required>
+     </b></p>
+	 <br/><br/>
+	  <br/><br/>
+	  <br/><br/>
+	 
+          <button style="background-color:#4CAF50;color:white;width: 25%;height:40px;border-radius:4px;" type="button" onclick="loadDoc() ">GO to Next</button>
+	   <br/><br/>
+	  <br/><br/>
+	  <br/><br/>
+  </form> 
+  
+</div>
+
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "NextAdmin.html", true);
+  xhttp.send();
+}
+</script>
+
+
+
+
+
+
+<footer>
+
+<div class="footer">
+
+
+
+<p style ="color:white;">
+&emsp; 
+<img src="img/icon2.png" style="float:left; width:60px; height:60px;">
+<br>
+ &emsp;
+<strong>Tiger Airline</strong>
+<br>
+
+connecting world
+
+</p>
+
+
+
+
+<p style ="color:white;text-align:center;"> all rights reserved.</p>
+
+</div>
+</footer>
+
+</body>
+</html>
+

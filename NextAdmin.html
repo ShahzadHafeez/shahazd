@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin Next</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	
+	
+</head>
+
+<style>
+input[type=text], input[type=tel],input[type=number],input[type=email],#trvloct,#rchloct, list {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type=submit] {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div.forum
+{
+    display: block;
+    text-align: center;
+}
+
+
+body{ 
+
+ background-image:url("lll.jpg");
+  
+ }  
+
+
+
+
+.footer{
+	
+	width: 100%;
+    background-color: #404040;
+}
+
+
+
+
+</style>
+
+<body>
+
+
+<div class = "forum">
+ 
+    <form action="Servlet_New_Flight" method="post">
+ <label for="fname"><h4>Business Class:</h4></label>
+	  <p style="color:red;">seats:</p>
+          <input type="number"  name="seat_business" value="50" placeholder="50" required>
+       <br/><br/>
+	   <p style="color:red;">price:</p>
+           <input type="number"  name="price_business" value="100" placeholder="123 $" required>
+       <br/><br/>
+	  
+	  <label for="fname"><h4>First Class:</h4></label>
+	  <p style="color:red;">seats:</p>
+          <input type="number"  name="seat_first" value="50" placeholder="50 " required>
+       <br/><br/>
+	   <p style="color:red;">price:</p>
+           <input type="number"  name="price_first" value="89" placeholder="100 $" required>
+       <br/><br/>
+	  
+	  <label for="fname"><h4>Economy Class:</h4></label>
+	  <p style="color:red;">seats:</p>
+          <input type="number"  name="seat_economy" value="50" placeholder="50 " required>
+       <br/><br/>
+	   <p style="color:red;">price:</p>
+           <input type="number"  name="price_economy" value="79" placeholder="80 $" required>
+       <br/><br/>
+	    <label for="fname"><h4>Total Seats:</h4></label>
+            <input type="number"  name="seat_total" value="155" placeholder="155" required>
+	  <br/><br/>
+  	<br/><br/><br/>
+	
+   
+    
+
+   
+ 
+
+ 
+    <input type="submit" value="Submit">
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+	
+
+ </form>    
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{ 
+ color: red;
+ background-image:url("sweet.jpg");
+ }   
+
+input[type=text],input[type=password],input[type=email], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#optlist{
+	width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div.forum
+{
+    display: block;
+    text-align: center;
+	
+}
+form
+{
+    background-color: #f3e5ab;
+    display: inline-block;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+	border-radius: 10px;
+}
+
+
+</style>
+<body>
+
+<div class = "forum">
+    <form id="myFrame" onsubmit="actionpage();" action="Servlet_Login" method="post" >
+   <br>
+    <h1 style="color:black;font-size:15px;">*Wrong Input</h1>
+  <img src="img/log.ico" style="width:80px;height:80px;">
+ 
+  <p>User Type*</p>
+  <input id="optlist" name="type" list="Usertype" placeholder="Select User" required>
+	  <datalist id="Usertype">
+	    
+		<option value="admin">
+		<option value="manager">
+		<option value="client">
+	  </datalist>
+
+    <p>Name*</p>
+    <input type="text" id="fname" name="uname" placeholder="Enter Name" required>
+    
+    <p>E-mail*</p>
+
+    <input type="email" id="E-mail" name="email" placeholder="Enter Email" required>
+    	
+    <p>Password*</p>
+
+    <input type="password" id="Password" name="password" placeholder="Enter Password" required>
+     
+	 <br>
+	 <br>
+	 <br>
+     
+    <input type="submit" value="login">
+	<br>
+
+  </form>
+</div>
+
+
+</html>

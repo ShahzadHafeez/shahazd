@@ -1,0 +1,72 @@
+body {
+	
+	background-image: url("img/paper3.jpg");
+	
+}
+		
+.btn-group .button {
+    background-color: #404040;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+	font-style:normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    float: left;
+	
+}
+.btn-group  .space {
+    background-color: #404040;
+    border: none;
+    color: #404040;
+    padding: 28.5px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    cursor: pointer;
+    float: left;
+	
+}
+.btn-group  .home {
+	background-color: red;
+   border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+	font-style:normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    float: left;
+	
+}
+
+.btn-group .button:hover {
+ background-color: white;
+ color:red;
+}
+
+
+
+
+.background {
+  background: url(img/as3.jpg);
+  height:1000px;
+  border: 0px solid black;
+}
+
+
+
+
+.footer{
+	height:30%;
+	width: 100%;
+    background-color: #404040;
+}
+
+
